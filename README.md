@@ -3,6 +3,6 @@ Projeto ft_server pelo squad H2
 
 
 # Integrantes
-bvidigal
-ltakahas
-rcamilo-
+- bvidigal
+- ltakahas
+- rcamilo-
