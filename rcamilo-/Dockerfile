@@ -4,5 +4,5 @@ FROM debian:buster
 #run something
 RUN apt-get update
 
-# Echo done
+# echo done
 CMD ["echo", "DONE!"] 
