@@ -12,10 +12,10 @@
 
 ## nginx
 - https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx/
-
-## php
-
+- http://nginx.org/en/docs/http/configuring_https_servers.html
 
 ## phpMyAdmin
 - https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-source-debian-10
+- https://www.itzgeek.com/how-tos/linux/debian/how-to-install-phpmyadmin-with-nginx-on-debian-10.html
 - https://phpsolved.com/phpmyadmin-blowfish-secret-generator/
+- 
