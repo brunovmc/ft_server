@@ -6,6 +6,7 @@ COPY srcs /root/
 
 # update upgrade e instala nginx e maria db
 RUN	apt-get update && \
+	apt-get upgrade && \
 	apt-get install -y nginx \
 	mariadb-server \
 	php7.3 \
@@ -14,8 +15,11 @@ RUN	apt-get update && \
 	php-cli \
 	php-mbstring 
 
+RUN	bash /root/server-config.sh
+
 # o que ele vai executar quando inicia
 ENTRYPOINT service nginx start && \
-		service mysql start
+		service mysql start && \
+		bash
 
-
+CMD bash
