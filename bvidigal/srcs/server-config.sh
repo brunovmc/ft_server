@@ -6,6 +6,10 @@ apt-get install -y nginx \
 	php-mbstring \
 	mariadb-server
 
+mkdir /var/www/localhost
 
+cp /root/nginx.conf /etc/nginx/sites-available/default
+
+cp /root/info.php /var/www/localhost/
 
 
