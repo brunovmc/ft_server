@@ -15,14 +15,12 @@ RUN apt-get update && \
 	apt-get install -y nginx \
 	mariadb-server \
 	php7.3 php7.3-fpm php-mysql php-mbstring php-cli\
-	wget
-
-# ou
-RUN bash /root/server_config.sh (que chama o services_config.sh)
+	wget && \
+	bash /root/server_config.sh
 
 # ENTRYPOINT ./startup.sh && tail -f /dev/null
 
-# ou
-ENTRYPOINT start.sh
+ENTRYPOINT bash /root/start.sh && \
+	bash
 
-# CMD bash
+# CMD tail -f /dev/null
