@@ -15,6 +15,10 @@ cp /root/info.php /var/www/localhost/
 
 #instalar wordpress
 
+#cria bando de dados e senha vazia
+echo "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" | mysql -u root
+mysqladmin --user=root password ""
+
 # download wordpress tar
 wget https://wordpress.org/latest.tar.gz
 
@@ -25,7 +29,7 @@ tar -xzvf latest.tar.gz
 rm -rf latest.tar.gz
 
 #copy wordpress-config file into wordpress folder
-cp wp-config.php /wordpress/wp-config.php
+cp /root/wp-config.php wordpress/wp-config.php
 
 #move wordpress folder to localhost
 mv wordpress /var/www/localhost/
