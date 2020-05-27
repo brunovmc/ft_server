@@ -6,6 +6,7 @@ COPY srcs /root/
 
 RUN apt-get update && \
 	apt-get upgrade -u && \
+	apt-get install -y wget && \
 	bash /root/server-config.sh
 
 ENTRYPOINT bash /root/start.sh
