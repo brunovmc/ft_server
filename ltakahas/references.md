@@ -20,3 +20,5 @@
 - https://www.itzgeek.com/how-tos/linux/debian/how-to-install-phpmyadmin-with-nginx-on-debian-10.html
 - https://phpsolved.com/phpmyadmin-blowfish-secret-generator/
 - https://docs.phpmyadmin.net/ja/latest/config.html#config-examples
+
+## Wordpress
