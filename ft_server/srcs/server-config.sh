@@ -6,6 +6,8 @@ cp /root/nginx.conf /etc/nginx/sites-available/default
 
 cp /root/info.php /var/www/localhost/
 
+/etc/init.d/mysql start
+
 wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-english.tar.gz
 
 tar -xzvf phpMyAdmin-5.0.2-english.tar.gz
@@ -20,7 +22,7 @@ chown -R www-data:www-data /var/www/localhost/phpmyadmin
 
 #cria bando de dados e senha vazia
 echo "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" | mysql -u root
-mysqladmin --user=root password ""
+mysqladmin --user=root password "root"
 
 # download wordpress tar
 wget https://wordpress.org/latest.tar.gz
