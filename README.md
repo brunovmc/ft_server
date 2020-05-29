@@ -19,6 +19,13 @@ para rodar o container pela porta 80
     sudo docker run -it -p 80:80 exemplo
     
 
+para apagar todas as imagens e containers
+
+
+    sudo docker system prune -a
+    
+
+
 
 # Commit Log
 ![Alt Text](https://raw.githubusercontent.com/brunovmc/ft_server/master/image.png)
