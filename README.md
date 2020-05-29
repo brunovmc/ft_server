@@ -9,9 +9,16 @@ Projeto ft_server pelo squad H2
 
 # Comandos
 para criar o container e imagem
+
     sudo docker build -t exemplo .
+    
+
 para rodar o container pela porta 80
+
+
     sudo docker run -it -p 80:80 exemplo
+    
+
 
 # Commit Log
 ![Alt Text](https://raw.githubusercontent.com/brunovmc/ft_server/master/image.png)
