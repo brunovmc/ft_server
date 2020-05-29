@@ -7,6 +7,14 @@ Projeto ft_server pelo squad H2
 - ltakahas
 - rcamilo-
 
+# Comandos
+para criar o container e imagem
+sudo docker build -t exemplo .
+para rodar o container pela porta 80
+sudo docker run -it -p 80:80 exemplo
+
+# Logs
+
 # Links
 
 - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
